@@ -49,6 +49,17 @@ public class DuplicatesinArray {
             System.out.print(num + ", ");
         }
 
+        //best approach by babbar
+        int ans = 0;
+        for(int i =0;i<a.length;i++){
+            ans = ans ^ a[i];
+        }
+        for(int i=1;i<a.length;i++){
+            ans = ans ^ i;
+        }
+
+        System.out.println("ans by babbar" + ans);
+
     }
     public static void printArr(int a[]){
         System.out.println("th array is ");
@@ -56,4 +67,8 @@ public class DuplicatesinArray {
             System.out.print(a[i] +", ");
         }
     }
+
+
+
+
 }

@@ -1,5 +1,6 @@
 package array;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 
 public class UniqueElementInArray {
@@ -24,13 +25,17 @@ public class UniqueElementInArray {
         System.out.println("by xor");
         System.out.println(findunique(a,a.length));
 
+
     }
 
     public static int findunique(int[] arr,int size){
         int ans=0;
         for(int i=0;i<size;i++){
-            ans = ans ^ arr[i];
+            ans = ans ^ arr[i]; // we do xor coz if same number is xor with its own number then it gives us zero
         }
         return  ans;
     }
+
+
+
 }
