@@ -3,6 +3,10 @@ package leetcode.arrays;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+* https://www.naukri.com/code360/problems/pair-sum_697295?leftPanelTabValue=PROBLEM
+* */
+
 public class pairSum {
     public static void main(String[] args) {
 

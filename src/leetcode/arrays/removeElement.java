@@ -2,6 +2,7 @@ package leetcode.arrays;
 
 /*
 * returns the index of array after removing the val element from array
+*
 * */
 
 public class removeElement {

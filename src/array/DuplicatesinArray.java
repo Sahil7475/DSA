@@ -1,7 +1,9 @@
 package array;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashSet;
+import java.util.List;
 
 public class DuplicatesinArray {
     public static void main(String[] args) {
@@ -59,6 +61,31 @@ public class DuplicatesinArray {
         }
 
         System.out.println("ans by babbar" + ans);
+
+        // new o(n) approach
+
+            List<Integer> duplicates1 = new ArrayList<Integer>();
+
+               for(int i=0;i<a.length;i++){
+                 for(int j=i+1;j<a.length;j++){
+                     if(a[i]==a[j]){
+                         duplicates.add(a[i]);
+                     }
+                 }
+               }
+
+            Arrays.sort(a);
+
+                for(int i=1;i<a.length;i++){
+                    if(a[i]==a[i-1]){
+                        if(duplicates1.isEmpty() || duplicates1.get(duplicates.size()-1)!=a[i]){
+                            duplicates1.add(a[i]);
+                        }
+                    }
+                }
+
+
+
 
     }
     public static void printArr(int a[]){
